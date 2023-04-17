@@ -1,0 +1,61 @@
+:root {
+  --primary-text-color-footer: #ffffff;
+  --primary-bg-color-footer: #06071b;
+  --footer-font-weight-title: 700;
+  --footer-font-weight-text: 500;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: var(--footer-font-weight-text);
+}
+
+/**
+  |============================
+  | BASE-STYLES
+  |============================
+*/
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list {
+  list-style: none;
+}
+/**
+  |============================
+  | FOOTER
+  |============================
+*/
+.footer-section {
+  color: var(--primary-text-color-footer);
+  background-color: var(--primary-bg-color-footer);
+}
+.footer-title {
+  font-weight: var(--title-font-weight-title);
+  font-size: 24px;
+  line-height: 1.21;
+}
+.footer-subtitle {
+  font-size: 24px;
+  line-height: 1.21;
+}
+.footer-text {
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer-link {
+  font-size: 14px;
+  line-height: 17px;
+}
+.footer-phone {
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer-mail {
+  font-size: 14px;
+  line-height: 17px;
+}
+.footer-copyright {
+  font-size: 14px;
+  line-height: 17px;
+}

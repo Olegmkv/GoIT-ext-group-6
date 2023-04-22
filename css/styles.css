@@ -1,4 +1,14 @@
+/* main parameters*/
 :root {
     --primary-text-color: #000000;
     --primary-fon-color: #ffffff;
+}
+
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
 }

@@ -3,6 +3,11 @@
     --primary-bg-color-footer: #06071b;
     --footer-font-weight-title: 700;
     --footer-font-weight-text: 500;
+
+    --primary-bg-color: #06071B;
+
+
+
 }
 
 body {
@@ -15,6 +20,22 @@ body {
   | BASE-STYLES
   |============================
 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 .link {
     text-decoration: none;
     color: inherit;
@@ -23,6 +44,99 @@ body {
 .list {
     list-style: none;
 }
+
+
+.container {
+    width: 1280px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Inter", sans-sherif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/**
+  |============================
+  | HEADER
+  |============================
+*/
+.head-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.head-logo {
+    display: block;
+    padding: 18px 0;
+
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.21;
+
+    outline: 2px solid tomato;
+}
+
+.head-list {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    /* align-items: start; */
+    gap: 40px;
+}
+
+.head-list .link {
+    display: block;
+    padding-top: 29px;
+    padding-bottom: 28px;
+
+    outline: 2px solid tomato;
+}
+
+/**
+  |============================
+  | hero
+  |============================
+*/
+
+.hero {
+    background-color: var(--primary-dark-color);
+
+}
+
+
+/**
+  |============================
+  | KEY FEATURES
+  |============================
+*/
+
+
+/**
+  |============================
+  | WATCH THE VIDEO
+  |============================
+*/
+
+
+/**
+  |============================
+  | OUR TEAM
+  |============================
+*/
+
+
+/**
+  |============================
+  | WHAT OUR COSTUMERS SAY
+  |============================
+*/
+
 
 /**
   |============================

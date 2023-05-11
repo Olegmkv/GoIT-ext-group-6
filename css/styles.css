@@ -5,9 +5,8 @@
     --footer-font-weight-text: 500;
 
     --primary-bg-color: #06071B;
-
-
-
+    --primary-light-color: #ffffff;
+    --primary-dark-color: #000000;
 }
 
 body {
@@ -64,10 +63,28 @@ body {
   | HEADER
   |============================
 */
+.header {
+    background-color: var(--primary-bg-color);
+    /* position: relative; */
+}
+
 .head-nav {
     display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 1280px;
+    padding: 0 16px;
+    top: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+
     justify-content: space-between;
     align-items: baseline;
+    color: var(--primary-light-color);
+
+    background: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%,
+            rgba(181, 68, 254, 0.3) 89.43%);
+
 }
 
 .head-logo {
@@ -78,10 +95,11 @@ body {
     font-size: 28px;
     line-height: 1.21;
 
-    outline: 2px solid tomato;
 }
 
 .head-list {
+    margin-left: auto;
+    margin-right: 0;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -95,7 +113,6 @@ body {
     padding-top: 29px;
     padding-bottom: 28px;
 
-    outline: 2px solid tomato;
 }
 
 /**
@@ -105,7 +122,80 @@ body {
 */
 
 .hero {
-    background-color: var(--primary-dark-color);
+    color: var(--primary-light-color);
+    padding-top: 243px;
+    padding-bottom: 146px;
+    position: relative;
+
+    background-color: var(--primary-bg-color);
+    /* background: linear-gradient (0deg, 
+    rgba(0, 197, 235, 0.5),
+            rgba(0, 197, 235, 0.5)), #D9D9D9; */
+    background-image:
+        url("../images/hero/charter.png"),
+        url("../images/hero/bell.png"),
+        url("../images/hero/calendar.png"),
+        url("../images/hero/wave.png"),
+        url("../images/hero/clock.png"),
+        url("../images/hero/message.png"),
+        url("../images/hero/tool.png");
+
+    background-position: 373px 565px, 339px 432px,
+        472px 389px, 517px 287px, 644px 295px,
+        685px 227px, 803px 261px;
+
+    background-repeat: no-repeat;
+
+}
+
+.hero-head {
+
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+
+}
+
+.hero-text {
+    margin-top: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.hero-list {
+    margin-top: 28px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+}
+
+.hero-item:not(:first-child) {
+    margin-top: 14px;
+}
+
+.hero-item::before {
+    content: ">";
+}
+
+.hero-button {
+    margin-top: 62px;
+
+    width: 200px;
+    height: 42px;
+    display: block;
+
+    color: var(--primary-light-color);
+    background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    border-radius: 5px;
+}
+
+.hero-mobile {
+    position: absolute;
+    bottom: -14%;
+    right: 0;
 
 }
 

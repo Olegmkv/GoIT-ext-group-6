@@ -192,6 +192,14 @@ body {
     border-radius: 5px;
 }
 
+.hero-button:hover {
+    background: none;
+}
+
+.hero-button:active {
+    background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+}
+
 .hero-mobile {
     position: absolute;
     bottom: -14%;
